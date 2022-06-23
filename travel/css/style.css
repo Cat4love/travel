@@ -93,6 +93,8 @@ html {
 	box-sizing: inherit;
 }
 
+
+
 body {
 	font-family: 'Aleo';
 	font-style: normal;
@@ -102,23 +104,26 @@ body {
 	color: #0D606F;
 }
 
-header {
-	width: 100%;
-	height: 90px;
-	background-color: black;
-}
-
-.wrap {
+.wraper {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(242, 120, 92, 0.7);
+	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
 
-.header__wrap {
+
+.header__wraper {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	height: 90px;
 }
 
 
@@ -127,6 +132,9 @@ header {
 	flex-direction: row;
 	align-items: center;
 	gap: 6px;
+	margin-right: 158px;
+	width: 216px;
+	padding-top: -16px;
 }
 
 .header__logo-text {
@@ -136,6 +144,12 @@ header {
 	font-size: 32px;
 	line-height: 39px;
 	color: #FFFFFF;
+	margin: 0;
+}
+
+.header__nav {
+	width: 527px;
+	margin-right: 196px;
 }
 
 .header__list {
@@ -144,6 +158,7 @@ header {
 	align-items: flex-start;
 	gap: 42px;
 	list-style-type: none;
+	padding: 0;
 }
 
 .header__link {
@@ -156,23 +171,106 @@ header {
 	text-decoration: none;
 }
 
-.header__button {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+
+.login-button__submit {
+	padding: 10px 30px;
 	width: 103px;
 	height: 41px;
 	background: #0D606F;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
-}
-
-.header__button-text {
 	font-family: 'Red Hat Text';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 21px;
+	color: #FFFFFF;
+	border: 0;
+}
+
+
+.preview {
+	min-height: 765px;
+	background: url(../img/jpg/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat center;
+	background-size: cover;
+	padding-top: 122px;
+}
+
+.preview__wrapper {
+	max-width: 892px;
+	min-height: 422px;
+}
+
+.preview__title {
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 96px;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+
+.preview__text {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-bottom: 46px;
+}
+
+.search-form__wraper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 892px;
+	height: 95px;
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid #000000;
+	border-radius: 16px;
+}
+
+
+.searh-form__text {
+	width: 560px;
+	height: 22px;
+	padding: 0;
+	border: 0;
+	margin: 0 0 0 41px;
+	background-color: transparent;
+	gap: 45px;
+}
+
+.searh-form__text::placeholder {
+	font-family: 'Aleo';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F2785C;
+}
+
+.searh-form__submit {
+	width: 228px;
+	height: 59px;
+	padding: 0;
+	margin: 0 18px 0 0;
+	border: 0;
+	background: #0D606F;
+	border: 1px solid #000000;
+	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
 	color: #FFFFFF;
 }

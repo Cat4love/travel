@@ -6,19 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>explore the beauty of the world</title>
-	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
-</head>
+	<link rel="stylesheet" href="./css/normalize.css">
+
 
 <body>
 	<header class="header">
-		<div class="wrap">
-			<div class="header__wrap">
+		<div class="wraper">
+			<div class="header__wraper">
 				<div class="header__logo">
 					<a href="/" class="header__logo-link">
 						<img src="./img/svg/vector.svg" alt="logo" class="header__logo-pic">
 					</a>
-					<h2 class="header__logo-text">Travel Portal</h2>
+					<p class="header__logo-text">Travel Portal</p>
 				</div>
 				<nav class="header__nav">
 					<ul class="header__list">
@@ -36,16 +36,32 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="header__button">
-					<p class="header__button-text">Login</p>
-				</div>
+				<form class="login-button">
+						<button class="login-button__submit">Login</button>
+				</form>
+				
 			</div>
 		</div>
 	</header>
 
 
 
-	<main></main>
+	<main class="main">
+		<section class="preview">
+			<div class="wraper">
+				<div class="preview__wrapper">
+					<h1 class="preview__title">Explore the beauty of the World</h1>
+					<p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
+					<form class="search-form">
+						<fieldset class="search-form__wraper">
+								<input type="text" class="searh-form__text" placeholder="What would you like to do?">
+								<button class="searh-form__submit">Start Planning</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
 	<footer></footer>
 </body>
 
