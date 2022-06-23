@@ -274,3 +274,69 @@ header {
 	line-height: 32px;
 	color: #FFFFFF;
 }
+
+
+.steps__wraper {
+	border: 3px dotted red;
+	width: 1177px;
+	height: 247px;
+	margin: 79px 131px;
+}
+
+.steps__title {
+	width: 611px;
+	height: 53px;
+	margin: 0 283px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 53px;
+	color: #F2785C;
+}
+
+.steps__boxes {
+	height: 194px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.steps__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 222px;
+	height: 154px;
+	border: 2px dotted red;
+
+
+}
+
+.steps__box-text {
+	margin: 0 auto;
+}
+
+.steps__box-pic{
+	position: relative;
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+}
+
+.steps__box-ico {
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left: 10px;
+
+}
+
+.pic1 {
+	margin-right: 231px;
+}
+
+.pic2 {
+	margin-right: 141px;
+}
