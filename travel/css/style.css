@@ -110,6 +110,7 @@ body {
 	max-width: 1440px;
 	min-height: 100%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .wraper {
@@ -342,4 +343,24 @@ header {
 	background: url(..//img/jpg/background-ico.jpg);
 }
 
+
+.destination__wraper {
+	width: 2520px;
+	height: 1042px;
+	margin-top: 97px;
+}
+
+.destination__titile {
+	margin-top: 97;
+
+}
+
+.destination__img {
+	position: relative;
+	top: 0;
+	left: -540px;
+	display: flex;
+	gap: 60px;
+	margin-top: 70px;
+}
 
