@@ -95,6 +95,8 @@ html {
 
 
 
+
+
 body {
 	font-family: 'Aleo';
 	font-style: normal;
@@ -104,16 +106,24 @@ body {
 	color: #0D606F;
 }
 
+.container {
+	max-width: 1440px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
 .wraper {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
+
+
 header {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
+	left: 50;
+	width: 1440px;
 	background: rgba(242, 120, 92, 0.7);
 	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
@@ -277,7 +287,6 @@ header {
 
 
 .steps__wraper {
-	border: 3px dotted red;
 	width: 1177px;
 	height: 247px;
 	margin: 79px 131px;
@@ -298,7 +307,6 @@ header {
 .steps__boxes {
 	height: 194px;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: flex-end;
 }
 
@@ -307,36 +315,31 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	min-width: 222px;
 	height: 154px;
-	border: 2px dotted red;
-
-
 }
 
-.steps__box-text {
-	margin: 0 auto;
+.steps__box-central {
+	margin: 0px 160px 0px 231px;
 }
 
-.steps__box-pic{
-	position: relative;
-	z-index: 1;
+.steps__text {
+	padding: 0;
+	margin: 0;
+	font-family: 'Aleo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #0D606F;
+}
+
+.steps__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100px;
 	height: 100px;
+	background: url(..//img/jpg/background-ico.jpg);
 }
 
-.steps__box-ico {
-	position: absolute;
-	z-index: 2;
-	top: 10px;
-	left: 10px;
 
-}
-
-.pic1 {
-	margin-right: 231px;
-}
-
-.pic2 {
-	margin-right: 141px;
-}
