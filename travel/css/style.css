@@ -108,9 +108,10 @@ body {
 
 .container {
 	max-width: 1440px;
-	min-height: 100%;
+	height: 3735px;
 	margin: 0 auto;
 	overflow: hidden;
+	background: #FFFFFF;
 }
 
 .wraper {
@@ -183,7 +184,7 @@ header {
 }
 
 
-.login-button__submit {
+.header__button__submit {
 	padding: 10px 30px;
 	width: 103px;
 	height: 41px;
@@ -344,23 +345,113 @@ header {
 }
 
 
-.destination__wraper {
+.destinations__wraper {
 	width: 2520px;
 	height: 1042px;
-	margin-top: 97px;
-}
-
-.destination__titile {
-	margin-top: 97;
-
-}
-
-.destination__img {
 	position: relative;
 	top: 0;
 	left: -540px;
 	display: flex;
-	gap: 60px;
-	margin-top: 70px;
+	flex-direction: column;
+	align-items: center;
 }
 
+.destinations__titile {
+	width: 501px;
+	height: 53px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 53px;
+	color: #F2785C;
+	margin: 19px 0px 45px 0px;
+}
+
+.destinations__countrys {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 60px;
+	padding: 0px;
+	
+}
+
+.destination__country-1 {
+	width: 800px;
+	height: 800px;
+	border-radius: 16px;
+	background: url(../img/jpg/sea.jpg);
+}
+
+.destination__country-2 {
+	width: 800px;
+	height: 800px;
+	border-radius: 16px;
+	background: url(../img/jpg/gate.jpg);
+}
+
+.destination__country-3 {
+	width: 800px;
+	height: 800px;
+	border-radius: 16px;
+	background: url(../img/jpg/bridge.jpg);
+}
+
+
+
+.destination__country-text {
+	width: 95px;
+	height: 42px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin: 718px 677px 40px 15px;
+}
+
+.destinations__scroll {
+	width: 80px;
+	height: 20px;
+	margin: 24px 680px 40px 680px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0px;
+	gap: 10px;
+}
+
+
+
+.destinations__button__submit{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 32px;
+	gap: 10px;
+	width: 228px;
+	height: 59px;
+	padding: 0px;
+	background: #0D606F;
+	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+	border-radius: 10px;
+	border: 0px;
+	
+}
+
+.destinations__button__text {
+	width: 116px;
+	height: 32px;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #FFFFFF;
+}
