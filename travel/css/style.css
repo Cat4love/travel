@@ -203,7 +203,7 @@ header {
 
 .preview {
 	min-height: 765px;
-	background: url(../img/jpg/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat center;
+	background: url(../img/jpg/mountain.jpg) no-repeat center;
 	background-size: cover;
 	padding-top: 122px;
 }
@@ -440,21 +440,15 @@ header {
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
 	border: 0px;
-
-}
-
-.destinations__button__text {
-	width: 116px;
-	height: 32px;
-	padding: 0px;
-	margin: 0px;
 	font-family: 'Red Hat Text';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 32px;
 	color: #FFFFFF;
+
 }
+
 
 .stories {
 	width: 1442px;
@@ -554,7 +548,7 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 8px 604px 0px 608px;
+	margin: 8px 606px 0px 606px;
 	padding: 10px 32px;
 	gap: 10px;
 	width: 228px;
@@ -563,12 +557,6 @@ header {
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
 	border: 0px;
-}
-
-.stories__button__text {
-	width: 116px;
-	height: 32px;
-	margin: 0px;
 	font-family: 'Red Hat Text';
 	font-style: normal;
 	font-weight: 500;
@@ -576,3 +564,4 @@ header {
 	line-height: 32px;
 	color: #FFFFFF;
 }
+
