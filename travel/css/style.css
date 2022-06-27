@@ -1,3 +1,4 @@
+/* fonts */
 /* red-hat-text-regular - latin */
 @font-face {
 	font-family: 'Red Hat Text';
@@ -94,10 +95,6 @@ html {
 	box-sizing: inherit;
 }
 
-
-
-
-
 body {
 	font-family: 'Aleo';
 	font-style: normal;
@@ -121,7 +118,7 @@ body {
 }
 
 
-
+/* header */
 header {
 	position: absolute;
 	top: 0;
@@ -129,7 +126,6 @@ header {
 	width: 1440px;
 	background: rgba(242, 120, 92, 0.7);
 	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-
 }
 
 
@@ -186,8 +182,12 @@ header {
 	text-decoration: none;
 }
 
+.header__link:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
+}
 
-.header__button__submit {
+
+.header__submit {
 	padding: 10px 30px;
 	width: 103px;
 	height: 41px;
@@ -203,7 +203,11 @@ header {
 	border: 0;
 }
 
+.header__submit:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
+}
 
+/* section preview */
 .preview {
 	min-height: 765px;
 	background: url(../img/jpg/mountain.jpg) no-repeat center;
@@ -288,7 +292,10 @@ header {
 	color: #FFFFFF;
 }
 
-
+.searh-form__submit:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
+}
+/* section steps */
 .steps__wraper {
 	width: 1177px;
 	height: 247px;
@@ -345,7 +352,7 @@ header {
 	background: url(..//img/jpg/background-ico.jpg);
 }
 
-
+/* section destinations */
 .destinations__wraper {
 	width: 2520px;
 	height: 1042px;
@@ -427,7 +434,7 @@ header {
 
 
 
-.destinations__button__submit {
+.destinations__submit {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -447,10 +454,13 @@ header {
 	font-size: 24px;
 	line-height: 32px;
 	color: #FFFFFF;
-
 }
 
+.destinations__submit:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
+}
 
+/* section stories */
 .stories {
 	width: 1442px;
 	height: 1331px;
@@ -544,7 +554,7 @@ header {
 }
 
 
-.stories__button__submit {
+.stories__submit {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -566,7 +576,11 @@ header {
 	color: #FFFFFF;
 }
 
+.stories__submit:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
+}
 
+/* footer */
 .footer__wraper {
 	position: relative;
 	bottom: 47px;
@@ -591,6 +605,10 @@ header {
 .footer__icon {
 	width: 33.65px;
 	height: 33.65px;
+}
+
+.footer__icon:hover {
+	filter: drop-shadow(0px 4px 4px #0D606F);
 }
 
 .footer__text {
