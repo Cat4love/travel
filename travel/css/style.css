@@ -129,7 +129,9 @@ header {
 	width: 1440px;
 	background: rgba(242, 120, 92, 0.7);
 	box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+
 }
+
 
 
 .header__wraper {
@@ -246,7 +248,6 @@ header {
 	width: 892px;
 	height: 95px;
 	background: rgba(255, 255, 255, 0.7);
-	border: 1px solid #000000;
 	border-radius: 16px;
 }
 
@@ -277,7 +278,6 @@ header {
 	margin: 0 18px 0 0;
 	border: 0;
 	background: #0D606F;
-	border: 1px solid #000000;
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
 	font-family: 'Red Hat Text';
@@ -563,5 +563,43 @@ header {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 32px;
+	color: #FFFFFF;
+}
+
+
+.footer__wraper {
+	position: relative;
+	bottom: 47px;
+	left: 590px;
+	width: 728.96px;
+	height: 33.65px;
+	display: flex;
+	align-items: center;
+	gap: 328px;
+
+}
+
+.footer__icons {
+	width: 140.96px;
+	height: 33.65px;
+	display: flex;
+	gap: 20px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.footer__icon {
+	width: 33.65px;
+	height: 33.65px;
+}
+
+.footer__text {
+	width: 260px;
+	height: 21px;
+	font-family: 'Red Hat Text';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
 	color: #FFFFFF;
 }
