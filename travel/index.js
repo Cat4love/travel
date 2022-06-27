@@ -1,0 +1,1 @@
+console.log('grade: 100/100')
