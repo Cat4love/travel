@@ -137,7 +137,6 @@ header {
 
 .header__wraper {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 	height: 90px;
 }
@@ -521,8 +520,8 @@ header {
 }
 
 .stories__box-img {
-	min-width: 400px;
-	min-height: 250px;
+	width: 400px;
+	height: 250px;
 	border-radius: 16px;
 	filter: drop-shadow(0px 4px 4px #0D606F);
 
@@ -590,8 +589,10 @@ header {
 /* footer */
 .footer {
 	position: absolute;
-	bottom: 12px;
-	left: 590px;
+	bottom: 0px;
+	left: 41%;
+	width: 100%;
+	height: 45px;
 }
 
 .footer__wraper {
@@ -599,7 +600,7 @@ header {
 	height: 33.65px;
 	display: flex;
 	align-items: center;
-	gap: 328px;
+	gap: 45%;
 
 }
 
