@@ -632,3 +632,27 @@ header {
 	line-height: 21px;
 	color: #FFFFFF;
 }
+
+.stories__box-img-mobi {
+	display: none;
+}
+
+.stories__box-text-mobi {
+	display: none;
+}
+
+.header__item-mobi {
+	display: none;
+}
+
+.header__burger-menu {
+	display: none;
+}
+
+.header__mobi-logo {
+	display: none;
+}
+
+.header__nav-close {
+	display: none;
+}
