@@ -656,3 +656,7 @@ header {
 .header__nav-close {
 	display: none;
 }
+
+.destination__arrows {
+	display: none;
+}

@@ -780,7 +780,7 @@
 		max-height: 1475px;
 		margin: 0 auto;
 		overflow: hidden;
-		border-radius: 30px;
+		
 		background: #FFFFFF;
 	}
 
@@ -829,25 +829,41 @@
 	.header__logo {
 		display: none;
 	}
+	.header__mobi-logo {
+		margin-top: 2px;
+	}
 
+	.header__burger-menu {
+		margin-right: 2px;
+	}
 
 	.header__nav {
-		position: fixed;
+		position: absolute;
 		width: 165px;
 		height: 250px;
+		right: -18px;
+    	top: -43px;
 		background: #F2785C;
 		box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
 		border-radius: 10px;
-		top: 0;
-		right: 0;
 		transform: translateX(100%);
-		transition: .5s all linear;
+		transition: .4s all linear;
 	}
 
 
 	.header__nav-active {
 		transform: translateX(0);
-
+	}
+	
+	.back_div{
+		position: absolute;
+		top: 0;
+		height: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.dark_mode_on {
+		background: rgba(0, 0, 0, 0.4);
 	}
 
 	.header__list {
@@ -902,6 +918,7 @@
 		background-size: cover;
 		margin-bottom: 20px;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		border-radius: 30px 30px 0px 0px;
 	}
 
 	.preview__wrapper {
@@ -1068,8 +1085,8 @@
 	}
 
 	.steps__ico {
-		width: 37px;
-		height: 37px;
+		width: 36px;
+		height: 36px;
 	}
 
 	/* section destinations */
@@ -1111,13 +1128,40 @@
 		max-height: 210px;
 		border-radius: 16px;
 		background: #FFFFFF, url(../img/jpg/mobile/sea_mobi.jpg);
+		background-size: cover;
+		background-position: 10%;
+		order: 2;
 	}
+
+	.destination__arrows {
+		position: relative;
+		top: 90px;
+		display: flex;
+		width: 100%;
+		height: 30px;
+		justify-content: center;
+		align-items: center;
+		gap: 309px;
+
+	}
+
+	.arrow_1 {
+		width: 14.36px;
+		height: 24.94px;
+	}
+
+	.arrow_2 {
+		width: 14.36px;
+		height: 24.94px;
+	}
+
 
 	.destination__country-2 {
 		max-width: 360px;
 		max-height: 210px;
 		border-radius: 16px;
 		background: #FFFFFF, url(../img/jpg/mobile/gate_mobi.jpg);
+		order: 3;
 	}
 
 	.destination__country-3 {
@@ -1125,6 +1169,7 @@
 		max-height: 210px;
 		border-radius: 16px;
 		background: #FFFFFF, url(../img/jpg/mobile/bridge_mobi.jpg);
+		order: 1;
 	}
 
 
@@ -1203,6 +1248,7 @@
 		height: 693px;
 		background: url(../img/jpg/mobile/boat_mobi.jpg);
 		margin: 0 auto;
+		border-radius: 0px 0px 30px 30px;
 	}
 
 	.stories__background {
