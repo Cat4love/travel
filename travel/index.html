@@ -4,10 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>travel-portal</title>
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/normalize.css">
+	<meta name="viewport" content="width=device-width">
+	<title>Travel Portal</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" href="./css/mobile.css" type="text/css">
+	<link rel="stylesheet" href="./css/normalize.css" type="text/css">
 	<link rel="icon" href=".//img/svg/favicon.svg" type="image/x-icon">
 </head>
 
@@ -17,6 +18,9 @@
 		<header class="header">																	
 			<div class="wraper">
 				<div class="header__wraper">
+					<div class="header__mobi-logo">
+						<img src="../travel/img/svg/mobi/mobi_logo.svg" alt="mobi_logo">
+					</div>
 					<div class="header__logo">
 						<a href="/" class="header__logo-link">
 							<img src="./img/svg/logo.svg" alt="logo" class="header__logo-pic">
@@ -37,11 +41,25 @@
 							<li class="header__item">
 								<a href="#travel_stories" class="header__link">Travel Stories</a>
 							</li>
+							<li class="header__item header__item-mobi">
+								<a href="#account" class="header__link">Account</a>
+							</li>
+							<li class="header__item header__item-mobi">
+								<a href="#social_media" class="header__link">Social Media</a>
+							</li>
 						</ul>
+						<div class="header__nav-close">
+							<img src=".//img/svg/mobi/burger_close.svg" alt="close">
+						</div>
 					</nav>
 					<form action="/" class="header__button">
 						<button class="header__submit">Login</button>
 					</form>
+					<div class="header__burger">
+						<div class="header__burger-menu burger">
+							<img src=".//img/svg/mobi/burger_menu.svg" alt="burger_menu" >
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -65,32 +83,34 @@
 			</section>
 			<!-- section steps -->
 			<section class="steps" id="plan_your_trip">
-				<div class="steps__wraper">
-					<h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
-					<div class="steps__boxes">
-						<div class="steps__box">
-							<div class="steps__img">
-								<img src=".//img/svg/bike.svg" alt="bike" class="steps__ico">
+				<div class="wraper">
+					<div class="steps__wraper">
+						<h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
+						<div class="steps__boxes">
+							<div class="steps__box steps__box-1">
+								<div class="steps__img">
+									<img src=".//img/svg/bike.svg" alt="bike" class="steps__ico">
+								</div>
+								<p class="steps__text steps__text-1">
+									Tell us what you want to do
+								</p>
 							</div>
-							<p class="steps__text">
-								Tell us what you want to do
-							</p>
-						</div>
-						<div class="steps__box steps__box-central">
-							<div class="steps__img">
-								<img src=".//img/svg/calc.svg" alt="calc" class="steps__ico">
+							<div class="steps__box steps__box-central steps__box-2">
+								<div class="steps__img">
+									<img src=".//img/svg/calc.svg" alt="calc" class="steps__ico">
+								</div>
+								<p class="steps__text steps__text-2">
+									Share us preferable dates
+								</p>
 							</div>
-							<p class="steps__text">
-								Share us preferable dates
-							</p>
-						</div>
-						<div class="steps__box">
-							<div class="steps__img">
-								<img src=".//img/svg/airplane.svg" alt="airplane" class="steps__ico">
+							<div class="steps__box steps__box-3">
+								<div class="steps__img">
+									<img src=".//img/svg/airplane.svg" alt="airplane" class="steps__ico">
+								</div>
+								<p class="steps__text steps__text-3">
+									We will give you recommendations
+								</p>
 							</div>
-							<p class="steps__text">
-								We will give you recommendations
-							</p>
 						</div>
 					</div>
 				</div>
@@ -104,6 +124,10 @@
 							<p class="destination__country-text">
 								SPAIN
 							</p>
+							<div class="destination__arrows">
+								<img src=".//img/svg/mobi/arrow_1.svg" alt="arrow" class="arrow_1">
+								<img src=".//img/svg/mobi/arrow_2.svg" alt="arrow" class="arrow_2">
+							</div>
 						</div>
 						<div class="destination__country-2">
 							<p class="destination__country-text">
@@ -117,9 +141,9 @@
 						</div>
 					</div>
 					<div class="destinations__scroll">
-						<img src=".//img/svg/ellipse_1.svg" alt="ellipse" class="destination__scroll-ellipse-1">
 						<img src=".//img/svg/ellipse_2.svg" alt="ellipse" class="destination__scroll-ellipse-2">
-						<img src=".//img/svg/ellipse_3.svg" alt="ellipse" class="destination__scroll-ellipse-1">
+						<img src=".//img/svg/ellipse_1.svg" alt="ellipse" class="destination__scroll-ellipse-1">
+						<img src=".//img/svg/ellipse_3.svg" alt="ellipse" class="destination__scroll-ellipse-3">
 					</div>
 					<form action="/" class="destinations__button">
 						<button class="destinations__submit">
@@ -138,6 +162,7 @@
 							<div class="stories__boxes">
 								<div class="stories__box">
 									<img src=".//img/jpg/stories_img1.jpg" alt="story1" class="stories__box-img">
+									<img src=".//img/jpg/mobile/stories_img1_mobi.jpg" alt="story1" class="stories__box-img-mobi"> 
 									<div class="stories__box-info">
 										<h3 class="stories__box-title">10 Photos of Attractive Thailand</h3> 
 										<p class="stories__box-text" lang="zxx">
@@ -153,10 +178,19 @@
 											consectetur adipiscing elit...
 											<b><u>Read More</u></b>
 										</p>
+										<p class="stories__box-text-mobi" lang="zxx">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem 
+											ipsum dolor sit a...
+											<b><u>Read More</u></b>
+										</p>
 									</div>
 								</div>
 								<div class="stories__box">
 									<img src=".//img/jpg/stories_img2.jpg" alt="story2" class="stories__box-img">
+									<img src=".//img/jpg/mobile/stories_img2_mobi.jpg" alt="story2" class="stories__box-img-mobi"> 
 									<div class="stories__box-info">
 										<h3 class="stories__box-title">Canyonlands National Park, Utah</h3>
 										<p class="stories__box-text" lang="zxx">
@@ -172,10 +206,19 @@
 											consectetur adipiscing elit...
 											<b><u>Read More</u></b>
 										</p>
+										<p class="stories__box-text-mobi" lang="zxx">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem 
+											ipsum dolor sit a...
+											<b><u>Read More</u></b>
+										</p>
 									</div>
 								</div>
 								<div class="stories__box">
 									<img src=".//img/jpg/stories_img3.jpg" alt="story3" class="stories__box-img">
+									<img src=".//img/jpg/mobile/stories_img3_mobi.jpg" alt="story3" class="stories__box-img-mobi"> 
 									<div class="stories__box-info">
 										<h3 class="stories__box-title">I left my heart in the Mountains!</h3>
 										<p class="stories__box-text" lang="zxx">
@@ -191,10 +234,19 @@
 											consectetur adipiscing elit...
 											<b><u>Read More</u></b>
 										</p>
+										<p class="stories__box-text-mobi" lang="zxx">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem 
+											ipsum dolor sit a...
+											<b><u>Read More</u></b>
+										</p>
 									</div>
 								</div>
 								<div class="stories__box">
 									<img src=".//img/jpg/stories_img4.jpg" alt="story4" class="stories__box-img">
+									<img src=".//img/jpg/mobile/stories_img4_mobi.jpg" alt="story4" class="stories__box-img-mobi"> 
 									<div class="stories__box-info">
 										<h3 class="stories__box-title">The Longest journey in my life!</h3>
 										<p class="stories__box-text" lang="zxx">
@@ -210,39 +262,48 @@
 											consectetur adipiscing elit...
 											<b><u>Read More</u></b>
 										</p>
+										<p class="stories__box-text-mobi" lang="zxx">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+											irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem 
+											ipsum dolor sit a...
+											<b><u>Read More</u></b>
+										</p>
 									</div>
 								</div>
-								<form action="/" class="stories__button">
-									<button class="stories__submit">
-										<img src=".//img/svg/arrow.svg" alt="arrow" class="stories__ico">
-										See More
-									</button>
-								</form>
-							</div>	
+							</div>
+							<form action="/" class="stories__button">
+								<button class="stories__submit">
+									<img src=".//img/svg/arrow.svg" alt="arrow" class="stories__ico">
+									See More
+								</button>
+							</form>	
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<!-- footer -->
-		<script src="../travel/index.js"></script>
-		<footer class="footer">
+		<footer class="footer" id="social_media">
 			<div class="footer__wraper">
 				<p class="footer__text">All Rights Reserved © Travel Portal</p>
 				<ul class="footer__icons">
 					<li>
-						<a href="https://github.com/andreiplavinski"><img class="footer__icon" src="../travel/img/svg/github-icon.svg" alt="github"></a>
+						<a href="https://github.com/andreiplavinski"><img class="footer__icon" src="../travel/img/svg/inst.svg" alt="github"></a>
 					</li>
 					<li>
-						<a href="https://rs.school/"><img class="footer__icon" src="img/svg/logo_rs_text.svg" alt="rs"></a>
+						<a href="https://rs.school/"><img class="footer__icon" src=".//img/svg/youtube.svg" alt="rs"></a>
 					</li>
 					<li>
-						<a href="https://rs.school/js/"><img class="footer__icon" src="../travel/img/svg/logo_rs2.svg" alt="js"></a>
+						<a href="https://rs.school/js/"><img class="footer__icon" src="../travel/img/svg/bird.svg" alt="js"></a>
 					</li>
 				</ul>
 			</div>
 		</footer>
+		<div class="back_div"></div>
 	</div>
+	<script src="../travel/index.js"></script>
 </body>
 </html>
 
