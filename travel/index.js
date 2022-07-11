@@ -8,22 +8,28 @@ const backDiv = document.querySelector('.back_div');
 burgerItem.addEventListener('click', () => {
 	menu.classList.add('header__nav-active');
 	backDiv.classList.add('dark_mode_on');
+	backDiv.classList.add('back_div_on');
 });
 menuCloseItem.addEventListener('click', () => {
 	menu.classList.remove('header__nav-active');
 	backDiv.classList.remove('dark_mode_on');
+	backDiv.classList.remove('back_div_on');
 })
 for (let i = 0; i < menuLinks.length; i += 1) {
 	menuLinks[i].addEventListener('click', () => {
 		menu.classList.remove('header__nav-active');
 		backDiv.classList.remove('dark_mode_on');
+		backDiv.classList.remove('back_div_on');
 	});
 }
+
 
 backDiv.addEventListener('click', () => {
 	menu.classList.remove('header__nav-active');
 	backDiv.classList.remove('dark_mode_on');
+	backDiv.classList.remove('back_div_on');
 })
+
 
 
 
