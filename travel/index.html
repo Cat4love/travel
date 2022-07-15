@@ -14,6 +14,37 @@
 
 <body>
 	<div class="container">
+		<div class="pop-up hidden">
+			<div class="pop-up__content">
+				<div class="pop-up__wraper">
+					<h2 class="pop-up__title">Log in to your account</h2>
+					<div class="pop-up__facebook-button">
+						<img src="../travel/img/svg/facebook.svg" alt="facebook" class="pop-up__facebook-img">
+						<p class="pop-up__fecebook-text">Sign In with Facebook </p>
+					</div>
+					<div class="pop-up__google-button">
+						<img src=".//img/svg/google.svg" alt="google" class="pop-up__google-img">
+						<p class="pop-up__google-text">Sign In with Google </p>
+					</div>
+					<div class="pop-up__line1">
+						<div class="pop-up__lineInner"></div>
+						<p class="pop-up__line1-text">or</p>
+						<div class="pop-up__lineInner"></div>
+					</div>
+					<p class="pop-up__input-text">E-mail</p>
+					<input type="text" class="pop-up__input-email">
+					<p class="pop-up__input-text">Password</p>
+					<input type="password" class="pop-up__input-password">
+					<button class="pop-up__signInButton">Sign In</button>
+					<p class="pop-up__forgot-text">Forgot Your Password?</p>
+					<div class="pop-up__line2"></div>
+					<div class="pop-up__footer">
+						<p class="pop-up__footer-promt">Don’t have an account?</p>
+						<p class="pop-up__footer-register">Register</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- header -->
 		<header class="header">																	
 			<div class="wraper">
@@ -52,9 +83,9 @@
 							<img src=".//img/svg/mobi/burger_close.svg" alt="close">
 						</div>
 					</nav>
-					<form action="/" class="header__button">
+					<div class="header__button">
 						<button class="header__submit">Login</button>
-					</form>
+					</div>
 					<div class="header__burger">
 						<div class="header__burger-menu burger">
 							<img src=".//img/svg/mobi/burger_menu.svg" alt="burger_menu" >
