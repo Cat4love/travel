@@ -31,12 +31,20 @@
 						<p class="pop-up__line1-text">or</p>
 						<div class="pop-up__lineInner"></div>
 					</div>
-					<p class="pop-up__input-text">E-mail</p>
-					<input type="text" class="pop-up__input-email">
-					<p class="pop-up__input-text">Password</p>
-					<input type="password" class="pop-up__input-password">
-					<button class="pop-up__signInButton">Sign In</button>
-					<p class="pop-up__forgot-text">Forgot Your Password?</p>
+					<form action="#" name="pop-up" class="pop-up__form">
+						<div class="pop-up__form-item">
+							<p class="pop-up__input-text">E-mail</p>
+							<input type="text" class="pop-up__input-email" value="" autocomplete="current-email">
+						</div>
+						<div class="pop-up__form-item">
+							<p class="pop-up__input-text">Password</p>
+							<input type="password" class="pop-up__input-password" value="" autocomplete="current-password">
+						</div>
+						<div class="pop-up__form-item">
+							<button type="submit" class="pop-up__signin">Sign In</button>
+							<p class="pop-up__forgot-text">Forgot Your Password?</p>
+						</div>
+					</form>
 					<div class="pop-up__line2"></div>
 					<div class="pop-up__footer">
 						<p class="pop-up__footer-promt">Don’t have an account?</p>

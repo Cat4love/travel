@@ -6,7 +6,9 @@ const menuLinks = document.querySelectorAll('.header__link');
 const backDiv = document.querySelector('.back_div');
 const loginButton = document.querySelector('.header__submit');
 const popup = document.querySelector('.pop-up');
-const popupContent = document.querySelector('.pop-up__content')
+const popupContent = document.querySelector('.pop-up__content');
+const signInButton = document.querySelector('.pop-up__signin');
+const inputPassword = document.querySelector('.pop-up__input-password').value;
 
 burgerItem.addEventListener('click', () => {
 	menu.classList.add('header__nav-active');
@@ -42,6 +44,13 @@ popup.addEventListener('click', (event) => {
 		popupContent.classList.toggle('pop-up__content-on');
 	}
 })
+
+signInButton.addEventListener('click', () => {
+	const inputEmail = document.querySelector('.pop-up__input-email').value;
+	const inputPassword = document.querySelector('.pop-up__input-password').value;
+	alert(`E-mail: ${inputEmail}\nPassword: ${inputPassword}`);
+})
+
 
 
 
