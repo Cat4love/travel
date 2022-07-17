@@ -8,7 +8,20 @@ const loginButton = document.querySelector('.header__submit');
 const popup = document.querySelector('.pop-up');
 const popupContent = document.querySelector('.pop-up__content');
 const signInButton = document.querySelector('.pop-up__signin');
-const inputPassword = document.querySelector('.pop-up__input-password').value;
+const registerButton = document.querySelector('.pop-up__register');
+const facebookButton = document.querySelector('.pop-up__facebook-button');
+const googleButton = document.querySelector('.pop-up__google-button ');
+const popupLine1 = document.querySelector('.pop-up__line1');
+const forgotText = document.querySelector('.pop-up__forgot-text');
+const popupTitle = document.querySelector('.pop-up__title');
+const promtText = document.querySelector('.pop-up__footer-promt');
+const registerText = document.querySelector('.pop-up__footer-register');
+
+
+
+
+
+
 
 burgerItem.addEventListener('click', () => {
 	menu.classList.add('header__nav-active');
@@ -50,6 +63,20 @@ signInButton.addEventListener('click', () => {
 	const inputPassword = document.querySelector('.pop-up__input-password').value;
 	alert(`E-mail: ${inputEmail}\nPassword: ${inputPassword}`);
 })
+
+registerButton.addEventListener('click', () => {
+	facebookButton.classList.toggle('off');
+	googleButton.classList.toggle('off');
+	popupLine1.classList.toggle('off');
+	forgotText .classList.toggle('off');
+	signInButton.classList.toggle('add_margin');
+	popupContent.classList.toggle('add_heigth');
+	let check = (popupTitle.innerHTML === 'Log in to your account') ? popupTitle.innerHTML = 'Create account' : popupTitle.innerHTML = 'Log in to your account';
+	let check1 = (promtText.innerHTML === 'Don’t have an account?') ? promtText.innerHTML = 'Already have an account?' : promtText.innerHTML = 'Don’t have an account?';
+	let check2 = (registerText.innerHTML === 'Register') ? registerText.innerHTML = 'Log in' : registerText.innerHTML = 'Register';
+	let check3 = (signInButton.innerHTML === 'Sign In') ? signInButton.innerHTML = 'Sign Up' : signInButton.innerHTML = 'Sign In';
+})
+
 
 
 
