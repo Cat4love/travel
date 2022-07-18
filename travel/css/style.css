@@ -126,7 +126,7 @@ body {
 	top: 0px;
 	left: 0px;
 	background-color: rgba(20, 20, 20, 0.25);
-	z-index: 2;
+	z-index: 3;
 
 }
 
@@ -137,13 +137,11 @@ body {
 
 .pop-up__content {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: center;
 	position: relative;
 	top: 1.8%;
 	left: 3%;
-	width: 650px;
+	width: 45.138%;
 	height: 660px;
 	background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -159,16 +157,20 @@ body {
 	transform: translateY(2%);
 }
 .pop-up__wraper {
-	max-width: 560px;
+	width: 86.153%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 .pop-up__title {
 	width: 100%;
-	height: 38px;
+	height: 5.757%;
 	font-family: 'Aleo';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 32px;
-	line-height: 38px;
+	font-size: 32px; 
+	line-height: 38px; 
 	color: #0D606F;
 	margin: 0px;
 	text-align: center;
@@ -176,15 +178,19 @@ body {
 	margin-bottom: 30px;
 }
 
+.add_margin-title {
+	margin: 25px 0px 40px 0px;
+}
+
 .pop-up__facebook-button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 15px 0px 15px 0px;
 	gap: 15px;
-	width: 560px;
-	height: 56px;
+	width: 100%;
+	height: 8.484%;
 	background: #1877F2;
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
@@ -194,14 +200,13 @@ body {
 
 
 .pop-up__fecebook-text {
-	width: 194px;
-	height: 26px;
 	font-family: 'Red Hat Text';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 26px;
 	color: #FFFFFF;
+	margin: 0px;
 
 }
 
@@ -210,10 +215,10 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 15px 0px 15px 0px;
 	gap: 15px;
-	width: 560px;
-	height: 56px;
+	width: 100%;
+	height: 8.484%;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 	border-radius: 10px;
@@ -221,14 +226,13 @@ body {
 }
 
 .pop-up__google-text {
-	width: 174px;
-	height: 26px;
 	font-family: 'Red Hat Text';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 26px;
 	color: #0D606F;
+	margin: 0px;
 }
 
 .pop-up__line1 {
@@ -237,18 +241,16 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	width: 560px;
-	height: 24px;
+	width: 100%;
+	height: 3.636%;
 	margin-bottom: 10px;
 }
 .pop-up__lineInner {
-	width: 261px;
+	width: 46.607%;
 	height: 0px;
 	border: 1px solid rgba(13, 96, 111, 0.5);
 }
 .pop-up__line1-text {
-	width: 20px;
-	height: 24px;
 	font-family: 'Aleo';
 	font-style: normal;
 	font-weight: 700;
@@ -259,9 +261,16 @@ body {
 	
 }
 
+
+.pop-up__form {
+	width: 100%;
+}
+
+.pop-up__form-item {
+	width: 100%;
+}
 .pop-up__input-text {
-	height: 19px;
-	width: 560px;
+	width: 100%;
 	font-family: 'Aleo';
 	font-style: normal;
 	font-weight: 400;
@@ -274,7 +283,7 @@ body {
 }
 
 .pop-up__input-email {
-	width: 560px;
+	width: 100%;
 	height: 54px;
 	left: 45px;
 	top: 313px;
@@ -286,7 +295,7 @@ body {
 }
 
 .pop-up__input-password {
-	width: 560px;
+	width: 100%;
 	height: 54px;
 	left: 45px;
 	top: 313px;
@@ -302,9 +311,9 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 229px;
+	padding: 10px 0px 10px 0px;
 	gap: 10px;
-	width: 560px;
+	width: 100%;
 	height: 54px;
 	background: #0D606F;
 	box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -317,6 +326,10 @@ body {
 	font-size: 20px;
 	line-height: 26px;
 	color: #FFFFFF;
+}
+
+.add_margin-signin {
+	margin: 0px 0px 30px 0px;
 }
 
 .pop-up__signin:hover {
@@ -337,16 +350,18 @@ body {
 	text-align: center;
 	margin: 0px 0px 24px 0px;
 }
-.add_margin {
-	margin: 0px 0px 22px 0px;
-}
+
 
 .pop-up__line2 {
-	width: 560px;
+	width: 100%;
 	height: 0px;
 	border: 1px solid rgba(13, 96, 111, 0.5);
 	transform: rotate(0.1deg);
-	margin-bottom: 20px;
+	margin: 0px 0px 20px 0px;
+}
+
+.add_margin-line2 {
+	margin: 0px 0px 15px 0px;
 }
 
 

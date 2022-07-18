@@ -12,13 +12,12 @@ const registerButton = document.querySelector('.pop-up__register');
 const facebookButton = document.querySelector('.pop-up__facebook-button');
 const googleButton = document.querySelector('.pop-up__google-button ');
 const popupLine1 = document.querySelector('.pop-up__line1');
+const popupLine2 = document.querySelector('.pop-up__line2');
 const forgotText = document.querySelector('.pop-up__forgot-text');
 const popupTitle = document.querySelector('.pop-up__title');
 const promtText = document.querySelector('.pop-up__footer-promt');
 const registerText = document.querySelector('.pop-up__footer-register');
-
-
-
+const accountLink = document.querySelector('.account');
 
 
 
@@ -50,6 +49,10 @@ loginButton.addEventListener('click', () => {
 	popup.classList.toggle('hidden');
 	popupContent.classList.toggle('pop-up__content-on');
 })
+accountLink.addEventListener('click', () => {
+	popup.classList.toggle('hidden');
+	popupContent.classList.toggle('pop-up__content-on');
+})
 
 popup.addEventListener('click', (event) => {
 	if (event.target.classList.contains('pop-up')) {
@@ -69,7 +72,9 @@ registerButton.addEventListener('click', () => {
 	googleButton.classList.toggle('off');
 	popupLine1.classList.toggle('off');
 	forgotText .classList.toggle('off');
-	signInButton.classList.toggle('add_margin');
+	popupTitle.classList.toggle('add_margin-title');
+	signInButton.classList.toggle('add_margin-signin');
+	popupLine2.classList.toggle('add_margin-line2');
 	popupContent.classList.toggle('add_heigth');
 	let check = (popupTitle.innerHTML === 'Log in to your account') ? popupTitle.innerHTML = 'Create account' : popupTitle.innerHTML = 'Log in to your account';
 	let check1 = (promtText.innerHTML === 'Don’t have an account?') ? promtText.innerHTML = 'Already have an account?' : promtText.innerHTML = 'Don’t have an account?';
