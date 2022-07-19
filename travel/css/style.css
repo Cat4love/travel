@@ -680,13 +680,48 @@ header {
 	margin: 19px 0px 45px 0px;
 }
 
+.destinations__slider {
+	position: relative;
+	width: 800px;
+	height: 800px;
+}
+
+.slider-prev {
+	width: 720px;
+	height: 800px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: -320px;
+	z-index: 3;
+}
+
+.slider-next {
+	width: 720px;
+	height: 800px;
+	padding: 0px;
+	border: 0px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 400px;
+	z-index: 3;
+}
+
 .destinations__countrys {
+	width: 2520px;
+	height: 800px;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	justify-content: flex-start;
 	gap: 60px;
 	padding: 0px;
-
+	position: relative;
+	left: -860px;
+	transition: all ease 1s ;
+	
 }
 
 .destination__country-1 {

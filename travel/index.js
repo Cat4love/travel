@@ -1,26 +1,13 @@
 console.log('Ваша оценка - 85 баллов')
+
+
+// burger
 const burgerItem = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
 const menuCloseItem = document.querySelector('.header__nav-close');
 const menuLinks = document.querySelectorAll('.header__link');
 const backDiv = document.querySelector('.back_div');
 const loginButton = document.querySelector('.header__submit');
-const popup = document.querySelector('.pop-up');
-const popupContent = document.querySelector('.pop-up__content');
-const signInButton = document.querySelector('.pop-up__signin');
-const registerButton = document.querySelector('.pop-up__register');
-const facebookButton = document.querySelector('.pop-up__facebook-button');
-const googleButton = document.querySelector('.pop-up__google-button ');
-const popupLine1 = document.querySelector('.pop-up__line1');
-const popupLine2 = document.querySelector('.pop-up__line2');
-const forgotText = document.querySelector('.pop-up__forgot-text');
-const popupTitle = document.querySelector('.pop-up__title');
-const promtText = document.querySelector('.pop-up__footer-promt');
-const registerText = document.querySelector('.pop-up__footer-register');
-const accountLink = document.querySelector('.account');
-
-
-
 
 burgerItem.addEventListener('click', () => {
 	menu.classList.add('header__nav-active');
@@ -44,6 +31,24 @@ backDiv.addEventListener('click', () => {
 	backDiv.classList.remove('dark_mode_on');
 	backDiv.classList.remove('back_div_on');
 })
+//burger
+
+
+//pop-up
+const popup = document.querySelector('.pop-up');
+const popupContent = document.querySelector('.pop-up__content');
+const signInButton = document.querySelector('.pop-up__signin');
+const registerButton = document.querySelector('.pop-up__register');
+const facebookButton = document.querySelector('.pop-up__facebook-button');
+const googleButton = document.querySelector('.pop-up__google-button ');
+const popupLine1 = document.querySelector('.pop-up__line1');
+const popupLine2 = document.querySelector('.pop-up__line2');
+const forgotText = document.querySelector('.pop-up__forgot-text');
+const popupTitle = document.querySelector('.pop-up__title');
+const promtText = document.querySelector('.pop-up__footer-promt');
+const registerText = document.querySelector('.pop-up__footer-register');
+const accountLink = document.querySelector('.account');
+
 
 loginButton.addEventListener('click', () => {
 	popup.classList.toggle('hidden');
@@ -81,6 +86,67 @@ registerButton.addEventListener('click', () => {
 	let check2 = (registerText.innerHTML === 'Register') ? registerText.innerHTML = 'Log in' : registerText.innerHTML = 'Register';
 	let check3 = (signInButton.innerHTML === 'Sign In') ? signInButton.innerHTML = 'Sign Up' : signInButton.innerHTML = 'Sign In';
 })
+//pop-up
+
+
+//slider
+
+let offset = 860;
+console.log(offset)
+const sliderLine = document.querySelector('.destinations__countrys');
+const sliderNext = document.querySelector('.slider-next');
+const sliderPrev = document.querySelector('.slider-prev');
+const sliderDot1 = document.querySelector('.destination__scroll-ellipse-1');
+const sliderDot2 = document.querySelector('.destination__scroll-ellipse-2');
+const sliderDot3 = document.querySelector('.destination__scroll-ellipse-3');
+
+sliderNext.addEventListener('click', () => {
+	offset += 860;
+	if (offset > 1720) {
+		offset = 0;
+	};
+	sliderLine.style.left = -offset + 'px';
+	if (offset == 0) {
+		sliderDot1.style.order = 0;
+		sliderDot2.style.order = 1;
+		sliderDot3.style.order = 2;
+	} else if (offset == 860) {
+		sliderDot1.style.order = 1;
+		sliderDot2.style.order = 0;
+		sliderDot3.style.order = 2;
+	} else {
+		sliderDot1.style.order = 2;
+		sliderDot2.style.order = 0;
+		sliderDot3.style.order = 1;
+	};
+	console.log(offset)
+});
+sliderPrev.addEventListener('click', () => {
+	offset -= 860;
+	if (offset < 0) {
+		offset = 1720;
+	};
+	sliderLine.style.left = -offset + 'px';
+	if (offset == 0) {
+		sliderDot1.style.order = 0;
+		sliderDot2.style.order = 1;
+		sliderDot3.style.order = 2;
+	} else if (offset == 860) {
+		sliderDot1.style.order = 1;
+		sliderDot2.style.order = 0;
+		sliderDot3.style.order = 2;
+	} else {
+		sliderDot1.style.order = 2;
+		sliderDot2.style.order = 0;
+		sliderDot3.style.order = 1;
+	};
+	console.log(offset)
+});
+//slider
+
+
+
+
 
 
 
