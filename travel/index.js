@@ -90,9 +90,10 @@ registerButton.addEventListener('click', () => {
 
 
 //slider
-
 let offset = 860;
-console.log(offset)
+if (document.documentElement.clientWidth < 391) {
+	offset = 375;
+};
 const sliderLine = document.querySelector('.destinations__countrys');
 const sliderNext = document.querySelector('.slider-next');
 const sliderPrev = document.querySelector('.slider-prev');
@@ -101,47 +102,90 @@ const sliderDot2 = document.querySelector('.destination__scroll-ellipse-2');
 const sliderDot3 = document.querySelector('.destination__scroll-ellipse-3');
 
 sliderNext.addEventListener('click', () => {
-	offset += 860;
-	if (offset > 1720) {
-		offset = 0;
-	};
-	sliderLine.style.left = -offset + 'px';
-	if (offset == 0) {
-		sliderDot1.style.order = 0;
-		sliderDot2.style.order = 1;
-		sliderDot3.style.order = 2;
-	} else if (offset == 860) {
-		sliderDot1.style.order = 1;
-		sliderDot2.style.order = 0;
-		sliderDot3.style.order = 2;
+	if (document.documentElement.clientWidth < 391) {
+		offset += 375;
+		if (offset > 750) {
+			offset = 0;
+		};
+		sliderLine.style.left = -offset + 'px';
+		if (offset == 0) {
+			sliderDot1.style.order = 0;
+			sliderDot2.style.order = 1;
+			sliderDot3.style.order = 2;
+		} else if (offset == 375) {
+			sliderDot1.style.order = 1;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 2;
+		} else {
+			sliderDot1.style.order = 2;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 1;
+		};
 	} else {
-		sliderDot1.style.order = 2;
-		sliderDot2.style.order = 0;
-		sliderDot3.style.order = 1;
+		console.log(offset);
+		offset += 860;
+		if (offset > 1720) {
+			offset = 0;
+		};
+		sliderLine.style.left = -offset + 'px';
+		if (offset == 0) {
+			sliderDot1.style.order = 0;
+			sliderDot2.style.order = 1;
+			sliderDot3.style.order = 2;
+		} else if (offset == 860) {
+			sliderDot1.style.order = 1;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 2;
+		} else {
+			sliderDot1.style.order = 2;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 1;
+		};
 	};
-	console.log(offset)
 });
+	
 sliderPrev.addEventListener('click', () => {
-	offset -= 860;
-	if (offset < 0) {
-		offset = 1720;
-	};
-	sliderLine.style.left = -offset + 'px';
-	if (offset == 0) {
-		sliderDot1.style.order = 0;
-		sliderDot2.style.order = 1;
-		sliderDot3.style.order = 2;
-	} else if (offset == 860) {
-		sliderDot1.style.order = 1;
-		sliderDot2.style.order = 0;
-		sliderDot3.style.order = 2;
+	if (document.documentElement.clientWidth < 391) {
+		offset -= 375;
+		if (offset < 0) {
+			offset = 750;
+		};
+		sliderLine.style.left = -offset + 'px';
+		if (offset == 0) {
+			sliderDot1.style.order = 0;
+			sliderDot2.style.order = 1;
+			sliderDot3.style.order = 2;
+		} else if (offset == 375) {
+			sliderDot1.style.order = 1;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 2;
+		} else {
+			sliderDot1.style.order = 2;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 1;
+		};
 	} else {
-		sliderDot1.style.order = 2;
-		sliderDot2.style.order = 0;
-		sliderDot3.style.order = 1;
+		offset -= 860;
+		if (offset < 0) {
+			offset = 1720;
+		};
+		sliderLine.style.left = -offset + 'px';
+		if (offset == 0) {
+			sliderDot1.style.order = 0;
+			sliderDot2.style.order = 1;
+			sliderDot3.style.order = 2;
+		} else if (offset == 860) {
+			sliderDot1.style.order = 1;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 2;
+		} else {
+			sliderDot1.style.order = 2;
+			sliderDot2.style.order = 0;
+			sliderDot3.style.order = 1;
+		};
 	};
-	console.log(offset)
 });
+
 //slider
 
 
