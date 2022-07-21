@@ -116,7 +116,7 @@ body {
 	background: #FFFFFF;
 }
 
-
+/*pop-up*/
 .pop-up {
 	display: flex;
 	justify-content: center;
@@ -126,7 +126,7 @@ body {
 	top: 0px;
 	left: 0px;
 	background-color: rgba(20, 20, 20, 0.25);
-	z-index: 3;
+	z-index: 5;
 
 }
 
@@ -412,7 +412,7 @@ body {
 	display: none;
 }
 
-
+/*pop-up*/
 
 .wraper {
 	max-width: 1200px;

@@ -51,20 +51,28 @@ const accountLink = document.querySelector('.account');
 
 
 loginButton.addEventListener('click', () => {
-	popup.classList.toggle('hidden');
-	popupContent.classList.toggle('pop-up__content-on');
+	popup.classList.remove('hidden');
+	popupContent.classList.add('pop-up__content-on');
+	if (popupContent.classList.contains('add_heigth')) {
+		changePopup(); 
+	};
 })
+
 accountLink.addEventListener('click', () => {
-	popup.classList.toggle('hidden');
-	popupContent.classList.toggle('pop-up__content-on');
+	popup.classList.remove('hidden');
+	popupContent.classList.add('pop-up__content-on');
+	if (popupContent.classList.contains('add_heigth')) {
+		changePopup(); 
+	};
 })
 
 popup.addEventListener('click', (event) => {
 	if (event.target.classList.contains('pop-up')) {
-		popup.classList.toggle('hidden');
-		popupContent.classList.toggle('pop-up__content-on');
+		popup.classList.add('hidden');
+		popupContent.classList.remove('pop-up__content-on');
 	}
 })
+
 
 signInButton.addEventListener('click', () => {
 	const inputEmail = document.querySelector('.pop-up__input-email').value;
@@ -72,7 +80,9 @@ signInButton.addEventListener('click', () => {
 	alert(`E-mail: ${inputEmail}\nPassword: ${inputPassword}`);
 })
 
-registerButton.addEventListener('click', () => {
+
+
+function changePopup() {
 	facebookButton.classList.toggle('off');
 	googleButton.classList.toggle('off');
 	popupLine1.classList.toggle('off');
@@ -85,7 +95,10 @@ registerButton.addEventListener('click', () => {
 	let check1 = (promtText.innerHTML === 'Don’t have an account?') ? promtText.innerHTML = 'Already have an account?' : promtText.innerHTML = 'Don’t have an account?';
 	let check2 = (registerText.innerHTML === 'Register') ? registerText.innerHTML = 'Log in' : registerText.innerHTML = 'Register';
 	let check3 = (signInButton.innerHTML === 'Sign In') ? signInButton.innerHTML = 'Sign Up' : signInButton.innerHTML = 'Sign In';
-})
+};
+
+registerButton.addEventListener('click', changePopup);
+
 //pop-up
 
 
