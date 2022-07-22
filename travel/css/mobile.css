@@ -785,6 +785,11 @@
 	}
 
 /*pop-up*/
+.pop-up__content{
+	width: 320px;
+	top: 0;
+	left: 0;
+}
 .pop-up__title {
 	font-size: 24px; 
 	line-height: 30px; 
