@@ -238,6 +238,12 @@ sliderPrev.addEventListener('click', () => {
 //slider
 
 
+window.addEventListener('resize', () => {
+	location.reload();
+});
+
+
+
 
 
 
