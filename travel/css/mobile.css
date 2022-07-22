@@ -1131,28 +1131,40 @@
 	}
 	
 	.slider-prev {
-		width: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 60px;
 		height: 210px;
 		padding: 0px;
 		border: 0px;
 		background-color: transparent;
 		position: absolute;
 		top: 0;
-		left: -20px;
+		left: -10px;
 		z-index: 3;
 	}
 	
 	.slider-next {
-		width: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 60px;
 		height: 210px;
 		padding: 0px;
 		border: 0px;
 		background-color: transparent;
 		position: absolute;
 		top: 0;
-		left: 180px;
+		left: 310px;
 		z-index: 3;
 	}
+	.arrow-on {
+		display: block;
+	}
+	
 	
 	.destinations__countrys {
 		width: 1110px;

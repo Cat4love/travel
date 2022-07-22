@@ -103,42 +103,66 @@ registerButton.addEventListener('click', changePopup);
 
 
 //slider
-let offset = 860;
-if (document.documentElement.clientWidth < 391) {
-	offset = 375;
-};
 const sliderLine = document.querySelector('.destinations__countrys');
 const sliderNext = document.querySelector('.slider-next');
 const sliderPrev = document.querySelector('.slider-prev');
 const sliderDot1 = document.querySelector('.destination__scroll-ellipse-1');
 const sliderDot2 = document.querySelector('.destination__scroll-ellipse-2');
 const sliderDot3 = document.querySelector('.destination__scroll-ellipse-3');
+const sliderArrow1 = document.querySelector('.slider__arrow1');
+const sliderArrow2 = document.querySelector('.slider__arrow2');
+const sliderArrow3 = document.querySelector('.slider__arrow3');
+const sliderArrow4 = document.querySelector('.slider__arrow4');
+
+
+let offset = 860;
+	if (document.documentElement.clientWidth < 391) {
+		offset = 375;
+		sliderArrow1.classList.add('arrow-on');
+		sliderArrow2.classList.add('arrow-on');
+};
+
+
+
+
 
 sliderNext.addEventListener('click', () => {
 	if (document.documentElement.clientWidth < 391) {
 		offset += 375;
 		if (offset > 750) {
-			offset = 0;
+			offset = 750;
 		};
 		sliderLine.style.left = -offset + 'px';
 		if (offset == 0) {
 			sliderDot1.style.order = 0;
 			sliderDot2.style.order = 1;
 			sliderDot3.style.order = 2;
+			sliderArrow1.classList.remove('arrow-on');
+			sliderArrow2.classList.add('arrow-on');
+			sliderArrow3.classList.add('arrow-on');
+			sliderArrow4.classList.remove('arrow-on');
 		} else if (offset == 375) {
 			sliderDot1.style.order = 1;
 			sliderDot2.style.order = 0;
 			sliderDot3.style.order = 2;
+			sliderArrow1.classList.add('arrow-on');
+			sliderArrow2.classList.add('arrow-on');
+			sliderArrow3.classList.remove('arrow-on');
+			sliderArrow4.classList.remove('arrow-on');
+
 		} else {
 			sliderDot1.style.order = 2;
 			sliderDot2.style.order = 0;
 			sliderDot3.style.order = 1;
+			sliderArrow1.classList.add('arrow-on');
+			sliderArrow2.classList.remove('arrow-on');
+			sliderArrow3.classList.remove('arrow-on');
+			sliderArrow4.classList.add('arrow-on');
 		};
 	} else {
-		console.log(offset);
 		offset += 860;
 		if (offset > 1720) {
-			offset = 0;
+			offset = 1720;
 		};
 		sliderLine.style.left = -offset + 'px';
 		if (offset == 0) {
@@ -161,26 +185,38 @@ sliderPrev.addEventListener('click', () => {
 	if (document.documentElement.clientWidth < 391) {
 		offset -= 375;
 		if (offset < 0) {
-			offset = 750;
+			offset = 0;
 		};
 		sliderLine.style.left = -offset + 'px';
 		if (offset == 0) {
 			sliderDot1.style.order = 0;
 			sliderDot2.style.order = 1;
 			sliderDot3.style.order = 2;
+			sliderArrow1.classList.remove('arrow-on');
+			sliderArrow2.classList.add('arrow-on');
+			sliderArrow3.classList.add('arrow-on');
+			sliderArrow4.classList.remove('arrow-on');
 		} else if (offset == 375) {
 			sliderDot1.style.order = 1;
 			sliderDot2.style.order = 0;
 			sliderDot3.style.order = 2;
+			sliderArrow1.classList.add('arrow-on');
+			sliderArrow2.classList.add('arrow-on');
+			sliderArrow3.classList.remove('arrow-on');
+			sliderArrow4.classList.remove('arrow-on');
 		} else {
 			sliderDot1.style.order = 2;
 			sliderDot2.style.order = 0;
 			sliderDot3.style.order = 1;
+			sliderArrow1.classList.add('arrow-on');
+			sliderArrow2.classList.remove('arrow-on');
+			sliderArrow3.classList.remove('arrow-on');
+			sliderArrow4.classList.add('arrow-on');
 		};
 	} else {
 		offset -= 860;
 		if (offset < 0) {
-			offset = 1720;
+			offset = 0;
 		};
 		sliderLine.style.left = -offset + 'px';
 		if (offset == 0) {
