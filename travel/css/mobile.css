@@ -784,6 +784,20 @@
 		background: #FFFFFF;
 	}
 
+/*pop-up*/
+.pop-up__content{
+	width: 320px;
+	top: 0;
+	left: 0;
+}
+.pop-up__title {
+	font-size: 24px; 
+	line-height: 30px; 
+}
+/*pop-up*/
+
+
+
 	.wraper {
 		max-width: 360px;
 		margin: 0 auto;
@@ -1115,16 +1129,61 @@
 		margin-top: 0px;
 		margin-bottom: 20px;
 	}
-
+	.destinations__slider {
+		position: relative;
+		width: 360px;
+		height: 210px;
+	}
+	
+	.slider-prev {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 60px;
+		height: 210px;
+		padding: 0px;
+		border: 0px;
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: -10px;
+		z-index: 3;
+	}
+	
+	.slider-next {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 60px;
+		height: 210px;
+		padding: 0px;
+		border: 0px;
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 310px;
+		z-index: 3;
+	}
+	.arrow-on {
+		display: block;
+	}
+	
+	
 	.destinations__countrys {
+		width: 1110px;
+		height: 210px;
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 15px;
 		padding: 0px;
 		margin-bottom: -44px;
-
+		position: relative;
+		left: -375px;
+		transition: all ease 1s ;
+		
 	}
 
 	.destination__country-1 {
@@ -1134,30 +1193,8 @@
 		background: #FFFFFF, url(../img/jpg/mobile/sea_mobi.jpg);
 		background-size: cover;
 		background-position: 10%;
-		order: 2;
 	}
 
-	.destination__arrows {
-		position: relative;
-		top: 90px;
-		display: flex;
-		width: 100%;
-		height: 30px;
-		justify-content: center;
-		align-items: center;
-		gap: 309px;
-
-	}
-
-	.arrow_1 {
-		width: 14.36px;
-		height: 24.94px;
-	}
-
-	.arrow_2 {
-		width: 14.36px;
-		height: 24.94px;
-	}
 
 
 	.destination__country-2 {
@@ -1165,7 +1202,6 @@
 		max-height: 210px;
 		border-radius: 16px;
 		background: #FFFFFF, url(../img/jpg/mobile/gate_mobi.jpg);
-		order: 3;
 	}
 
 	.destination__country-3 {
@@ -1173,7 +1209,6 @@
 		max-height: 210px;
 		border-radius: 16px;
 		background: #FFFFFF, url(../img/jpg/mobile/bridge_mobi.jpg);
-		order: 1;
 	}
 
 

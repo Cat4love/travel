@@ -14,6 +14,49 @@
 
 <body>
 	<div class="container">
+		<div class="pop-up hidden">
+			<div class="pop-up__content">
+				<div class="pop-up__wraper">
+					<h2 class="pop-up__title">Log in to your account</h2>
+					<div class="pop-up__facebook-button">
+						<img src="../travel/img/svg/facebook.svg" alt="facebook" class="pop-up__facebook-img">
+						<p class="pop-up__fecebook-text">Sign In with Facebook </p>
+					</div>
+					<div class="pop-up__google-button">
+						<img src=".//img/svg/google.svg" alt="google" class="pop-up__google-img">
+						<p class="pop-up__google-text">Sign In with Google </p>
+					</div>
+					<div class="pop-up__line1">
+						<div class="pop-up__lineInner"></div>
+						<p class="pop-up__line1-text">or</p>
+						<div class="pop-up__lineInner"></div>
+					</div>
+					<form action="#" name="pop-up" class="pop-up__form">
+						<div class="pop-up__form-item">
+							<p class="pop-up__input-text">E-mail</p>
+							<input type="text" class="pop-up__input-email" value="" autocomplete="current-email">
+						</div>
+						<div class="pop-up__form-item">
+							<p class="pop-up__input-text">Password</p>
+							<input type="password" class="pop-up__input-password" value="" autocomplete="current-password">
+						</div>
+						<div class="pop-up__form-item">
+							<button type="button" class="pop-up__signin">Sign In</button>
+							<p class="pop-up__forgot-text">Forgot Your Password?</p>
+						</div>
+					</form>
+					<div class="pop-up__line2"></div>
+					<form action="#" class="pop-up__footer">
+						<button class="pop-up__register" type="button">
+							<p class="pop-up__register-text">
+								<span class="pop-up__footer-promt">Don’t have an account?</span>
+								<span class="pop-up__footer-register">Register</span>
+							</p>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
 		<!-- header -->
 		<header class="header">																	
 			<div class="wraper">
@@ -42,7 +85,7 @@
 								<a href="#travel_stories" class="header__link">Travel Stories</a>
 							</li>
 							<li class="header__item header__item-mobi">
-								<a href="#account" class="header__link">Account</a>
+								<a href="#account" class="header__link account">Account</a>
 							</li>
 							<li class="header__item header__item-mobi">
 								<a href="#social_media" class="header__link">Social Media</a>
@@ -52,9 +95,9 @@
 							<img src=".//img/svg/mobi/burger_close.svg" alt="close">
 						</div>
 					</nav>
-					<form action="/" class="header__button">
-						<button class="header__submit">Login</button>
-					</form>
+					<div class="header__button">
+						<button type="button" class="header__submit">Login</button>
+					</div>
 					<div class="header__burger">
 						<div class="header__burger-menu burger">
 							<img src=".//img/svg/mobi/burger_menu.svg" alt="burger_menu" >
@@ -75,7 +118,7 @@
 						<form action="/" class="search-form">
 							<fieldset class="search-form__wraper">
 								<input type="text" class="searh-form__text" placeholder="What would you like to do?">
-								<button class="searh-form__submit">Start Planning</button>
+								<button class="searh-form__submit" type="button" >Start Planning</button>
 							</fieldset>
 						</form>
 					</div>
@@ -119,34 +162,40 @@
 			<section class="destinations" id="destinations">
 				<div class="destinations__wraper">
 					<h2 class="destinations__titile">POPULAR DESTINATIONS</h2>
-					<div class="destinations__countrys">
-						<div class="destination__country-1">
-							<p class="destination__country-text">
-								SPAIN
-							</p>
-							<div class="destination__arrows">
-								<img src=".//img/svg/mobi/arrow_1.svg" alt="arrow" class="arrow_1">
-								<img src=".//img/svg/mobi/arrow_2.svg" alt="arrow" class="arrow_2">
+					<div class="destinations__slider">
+						<button type="button" class="slider-prev">
+							<img src="..//travel/img/svg/mobi/arrow1.svg" alt="arrow" class="slider__arrow1">
+							<img src="..//travel/img/svg/mobi/arrow3.svg" alt="arrow" class="slider__arrow3">
+						</button>
+						<div class="destinations__countrys">
+							<div class="destination__country-1">
+								<p class="destination__country-text">
+									SPAIN
+								</p>
+							</div>
+							<div class="destination__country-2">
+								<p class="destination__country-text">
+									JAPAN
+								</p>
+							</div>
+							<div class="destination__country-3">
+								<p class="destination__country-text">
+									USA
+								</p>
 							</div>
 						</div>
-						<div class="destination__country-2">
-							<p class="destination__country-text">
-								JAPAN
-							</p>
-						</div>
-						<div class="destination__country-3">
-							<p class="destination__country-text">
-								USA
-							</p>
-						</div>
-					</div>
+						<button type="button" class="slider-next">
+							<img src="..//travel/img/svg/mobi/arrow2.svg" alt="arrow" class="slider__arrow2">
+							<img src="..//travel/img/svg/mobi/arrow4.svg" alt="arrow" class="slider__arrow4">
+						</button>
+					</div>	
 					<div class="destinations__scroll">
-						<img src=".//img/svg/ellipse_2.svg" alt="ellipse" class="destination__scroll-ellipse-2">
-						<img src=".//img/svg/ellipse_1.svg" alt="ellipse" class="destination__scroll-ellipse-1">
+						<img src=".//img/svg/ellipse_1.svg" alt="ellipse" class="destination__scroll-ellipse-2">
+						<img src=".//img/svg/ellipse_2.svg" alt="ellipse" class="destination__scroll-ellipse-1">
 						<img src=".//img/svg/ellipse_3.svg" alt="ellipse" class="destination__scroll-ellipse-3">
 					</div>
 					<form action="/" class="destinations__button">
-						<button class="destinations__submit">
+						<button type="button"  class="destinations__submit">
 							<img src=".//img/svg/arrow.svg" alt="arrow" class="destinations__ico">
 							Find More
 						</button>
@@ -274,7 +323,7 @@
 								</div>
 							</div>
 							<form action="/" class="stories__button">
-								<button class="stories__submit">
+								<button type="button" class="stories__submit">
 									<img src=".//img/svg/arrow.svg" alt="arrow" class="stories__ico">
 									See More
 								</button>
